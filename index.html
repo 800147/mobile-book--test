@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://800147.github.io/tools/src/Document/Document.css">
+  <style>
+    :root {
+      font-size: 32px;
+    }
+    /* Images */
+    .Document figure:not(.Document-Exclude):not(.Document-Exclude *) {
+      padding: 0;
+      margin: 0;
+      margin-top: var(--size-xl);
+      text-align: center;
+    }
+    .Document figure > :is(img, video):not(.Document-Exclude):not(.Document-Exclude *) {
+      border-radius: var(--size-m);
+      border-radius: 0 !important;
+      display: block;
+      max-width: 100%;
+      height: auto;
+      box-shadow: 0 var(--size-xs) var(--size-m) var(--light-3);
+      margin: 0 auto;
+      background-color: var(--light-3);
+    }
+    @media (prefers-color-scheme: dark) {
+      .Document figure > :is(img, video):not(.Document-Exclude):not(.Document-Exclude *) {
+        box-shadow: 0 0 var(--size-m) var(--dark-2);
+        background-color: var(--dark-3);
+      }
+    }
+    .Document figcaption:not(.Document-Exclude):not(.Document-Exclude *) {
+      --margin-top: var(--size-l);
+    }
+
+    .Sticky {
+      position: sticky;
+      top: 0;
+      margin-left: calc(var(--size-l) * -1) !important;
+      margin-right: calc(var(--size-l) * -1) !important;
+      border-radius: 0 !important;
+      z-index: 2;
+    }
+  </style>
+</head>
+<body class="Document">
+  <main>
+    <h2>4 приключения Кости</h2>
+    <section>
+      <figure class="Sticky">
+        <video muted="muted" id="v1" playsinline="playsinline" preload="auto">
+          <source src="video1.webm" type="video/webm" />
+        </video>
+      </figure>
+      <p>
+        Сегодня после обеда Костя стал космонавтом. Не по-настоящему, конечно, хотя и очень похоже. Костя ходит по комнате... ой, по космической станции, и старается не раздавить разбросанные игрушки.
+      </p>
+      <p>
+        Он так увлечён, что даже не замечает нас. Привет, Костя! Костя? Костя! Нажми на кнопку, чтобы он нас заметил.
+      </p>
+      <figure>
+        <button onclick="v1.play()">Привлечь Костю</button>
+      </figure>
+    </section>
+    <section>
+      <figure class="Sticky">
+        <video muted="muted" playsinline="playsinline" autoplay loop preload="auto">
+          <source src="video2.webm" type="video/webm" />
+        </video>
+      </figure>
+      <p>
+        Косте нравится всё, что связано с космосом:
+полёты к дальним планетам, исследования
+галактик, жизнь внеземных цивилизаций,
+таинственные космические истории...
+</p>
+<p>
+Вообще говоря, Костя — самый
+обыкновенный мальчик 8-ми лет. Ходит в
+школу, гуляет с друзьями, и-н-о-г-д-а читает. И совершенно не любит убирать за собой.
+      </p>
+      <p>
+В сегодняшний космический полёт Костя
+должен был отправиться со своей новой
+игрушкой.
+</p><p>
+Только вот игрушка затерялась где-то в
+бардаке...
+      </p>
+    </section>
+  </main>
+</body>
+</html>
